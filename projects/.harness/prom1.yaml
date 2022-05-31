@@ -1,0 +1,13 @@
+connector:
+  name: prom1
+  identifier: prom1
+  description:
+  orgIdentifier: default
+  projectIdentifier: gitTestPr1
+  type: Artifactory
+  spec:
+    artifactoryServerUrl: test.com
+    auth:
+      type: Anonymous
+    delegateSelectors:
+    - k8stwo
