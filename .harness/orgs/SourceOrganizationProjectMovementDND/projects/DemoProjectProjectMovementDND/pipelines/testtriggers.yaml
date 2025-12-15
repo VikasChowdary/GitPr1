@@ -2,7 +2,7 @@ pipeline:
   name: test-triggers
   identifier: testtriggers
   projectIdentifier: DemoProjectProjectMovementDND
-  orgIdentifier: SourceOrganizationProjectMovementDND
+  orgIdentifier: DestinationOrganizationProjectMovementDND
   tags: {}
   stages:
     - stage:
@@ -17,7 +17,7 @@ pipeline:
                   name: tesrt
                   identifier: tesrt
                   type: HarnessApproval
-                  timeout: 1d
+                  timeout: 5m
                   spec:
                     approvalMessage: |-
                       Please review the following information
