@@ -1,5 +1,5 @@
 pipeline:
-  name: remote-test
+  name: remote-test-2
   identifier: remotetest
   projectIdentifier: DemoProjectProjectMovementDND
   orgIdentifier: DestinationOrganizationProjectMovementDND
