@@ -1,0 +1,32 @@
+pipeline:
+  name: remote-test
+  identifier: remotetest
+  projectIdentifier: DemoProjectProjectMovementDND
+  orgIdentifier: DestinationOrganizationProjectMovementDND
+  tags: {}
+  stages:
+    - stage:
+        name: test
+        identifier: test
+        description: ""
+        type: Approval
+        spec:
+          execution:
+            steps:
+              - step:
+                  type: HarnessApproval
+                  name: HarnessApproval_1
+                  identifier: HarnessApproval_1
+                  spec:
+                    approvalMessage: Please review the following information and approve the pipeline progression
+                    includePipelineExecutionHistory: true
+                    isAutoRejectEnabled: false
+                    approvers:
+                      userGroups:
+                        - account.accountAdministrator
+                        - _project_all_users
+                      minimumCount: 1
+                      disallowPipelineExecutor: false
+                    approverInputs: []
+                  timeout: 1d
+        tags: {}
