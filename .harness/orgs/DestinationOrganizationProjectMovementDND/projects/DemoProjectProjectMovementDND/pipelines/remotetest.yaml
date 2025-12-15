@@ -1,5 +1,5 @@
 pipeline:
-  name: remote-test
+  name: trigger-test
   identifier: remotetest
   projectIdentifier: DemoProjectProjectMovementDND
   orgIdentifier: DestinationOrganizationProjectMovementDND
